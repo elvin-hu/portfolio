@@ -1,0 +1,183 @@
+/* CSS files add styling rules to your content */
+html {
+    scroll-snap-type: y mandatory;
+}
+
+
+body {
+  margin: 0;
+  text-align: center;
+  overflow-x: hidden;
+  font-family: halyard-text, sans-serif;
+  font-weight: 350;
+  display: flex;
+  flex-direction: column;
+  scroll-snap-type: y proximity;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+
+}
+
+
+img {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+
+
+
+.header {
+  position: fixed;
+  display: flex;
+  min-width: 90%;
+  justify-content: space-between;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.item, a.item:link, a.item:visited, a.item-icon:link, a.item-icon:visited {
+  margin: 0px 30px 0px 0px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+}
+
+.item-icon:link, .item-icon:visited {
+  margin-right: 20px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  scroll-snap-align: start;
+}
+
+#hero-1 {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(180deg, #F1F8F9 0%, #F4F7F7 50.28%);
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+   scroll-snap-align: start;
+}
+
+#swipe-mock-up {
+  height: 65%;
+}
+
+.title {
+  position: absolute;
+  margin-top: 71vh;
+  font-size: 32pt;
+  font-family: halyard-display, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1.2em;
+}
+
+#one {
+  color:#146B66;
+}
+
+.des {
+  position: absolute;
+  margin-top: 85vh;
+  font-size: 14px;
+  line-height: 1.4em;
+}
+
+#des-1 {
+
+  color: #044450;
+
+}
+
+#des-2 {
+  color: #044450;
+}
+
+#hero-2 {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(180deg, #F6EFF0 0%, #FFFDFD 51.93%);
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+   scroll-snap-align: start;
+}
+
+#hatsukoi {
+  height: 80%;
+}
+
+#two {
+  color:#891626;
+}
+
+#des-2 {
+  color: #1B0202;
+}
+
+#hero-3 {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(180deg, #EFF3F6 0%, #FDFEFF 51.93%);
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+   scroll-snap-align: start;
+}
+
+#olympics {
+  margin-top: 12.5vh;
+  height: 65%;
+}
+
+#three {
+  color: #28729C;
+}
+
+#des-3 {
+  color: #02101B;
+}
+
+
+#hero-4 {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(180deg, #F0F7F6 0%, #F8FCFB 55.25%);
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+   scroll-snap-align: start;
+}
+
+#homepage {
+  margin-top: 11.7vh;
+  height: 72%;
+  margin-left: -4%;
+}
+
+#four {
+  color: #1B606E;
+}
+
+#des-4 {
+  color: #021114;
+}
