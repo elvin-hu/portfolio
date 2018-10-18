@@ -1,6 +1,6 @@
 /* CSS files add styling rules to your content */
 html {
-    scroll-snap-type: y mandatory;
+  overflow-y: scroll;
 }
 
 
@@ -8,11 +8,10 @@ body {
   margin: 0;
   text-align: center;
   overflow-x: hidden;
-  font-family: halyard-text, sans-serif;
+  font-family: halyard-display, sans-serif;
   font-weight: 350;
-  display: flex;
-  flex-direction: column;
-  scroll-snap-type: y proximity;
+  letter-spacing: .02rem;
+  display: block;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */
@@ -20,7 +19,7 @@ body {
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
-
+  scroll-snap-type: y mandatory;
 }
 
 
@@ -43,6 +42,7 @@ img {
   padding-top: 5%;
   padding-left: 5%;
   padding-right: 5%;
+  align-items: center;
 }
 
 .logo {
@@ -76,7 +76,6 @@ img {
   background: linear-gradient(180deg, #F1F8F9 0%, #F4F7F7 50.28%);
   margin: 0 0 0 0;
   padding: 0 0 0 0;
-   scroll-snap-align: start;
 }
 
 #swipe-mock-up {
@@ -181,3 +180,102 @@ img {
 #des-4 {
   color: #021114;
 }
+
+
+/* for phone only */
+@media (max-width: 599px) {
+
+  .title {
+    font-size: 25px;
+    margin-top: 60vh;
+    -webkit-order: -5;
+  }
+
+  #swipe-mock-up {
+    height: auto;
+    width: 95%;
+  }
+
+  #hatsukoi {
+    height: auto;
+    width: 130%;
+    margin-top: 10vh;
+  }
+
+  #homepage {
+    height: auto;
+    width: 200%;
+    margin-top: 10vh;
+  }
+
+  #olympics {
+    height: auto;
+    width: 200%;
+    margin-top: 10vh;
+    margin-left: 10vw;
+  }
+
+  .header {
+    align-items: center;
+    height: 5vh;
+    -webkit-order: 10;
+    margin-top: 77vh;
+    padding-left: 10vw;
+  }
+
+  .hero {
+    height: 100vh;
+    -webkit-order:-1;
+  }
+
+  .logo {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+.item, a.item:link, a.item:visited, a.item-icon:link, a.item-icon:visited {
+  margin: 0px 20px 0px 0px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+}
+
+.item-icon:link, .item-icon:visited {
+  margin-right: 20px;
+}
+
+  #email {
+  display:none;
+  }
+
+  .main {
+    margin-top: 0vh;
+  }
+
+  .des {
+    margin-top: 70vh;
+  }
+
+}
+
+/* for-tablet-portrait-up */
+@media (min-width: 600px) { }
+
+/* for-tablet-portait-only */
+  @media (min-width: 600px) and (max-width: 899px) { }
+
+/* for-tablet-landscape-up */
+  @media (min-width: 900px) {}
+
+/* for-tablet-landscape-only */
+  @media (min-width: 900px) and (max-width: 1199px) { }
+
+/* for-desktop-up */
+  @media (min-width: 1200px) { }
+
+/* for-desktop-only */
+  @media (min-width: 1200px) and (max-width: 1799px) { }
+
+/* for-big-desktop-up */
+  @media (min-width: 1800px) { }
