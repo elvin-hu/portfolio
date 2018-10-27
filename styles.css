@@ -19,7 +19,6 @@ body {
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
-  scroll-snap-type: y mandatory;
 }
 
 
@@ -29,10 +28,12 @@ img {
   -moz-user-select: none;
   -o-user-select: none;
   user-select: none;
+
 }
 
-
-
+b {
+  font-weight: 500;
+}
 
 .header {
   position: fixed;
@@ -50,7 +51,7 @@ img {
   font-size: 20px;
 }
 
-.item, a.item:link, a.item:visited, a.item-icon:link, a.item-icon:visited {
+.item, .item:link, .item:visited, .item-icon:link, .item-icon:visited {
   margin: 0px 30px 0px 0px;
   text-decoration: none;
   font-size: 16px;
@@ -62,35 +63,88 @@ img {
   margin-right: 20px;
 }
 
+#introduction {
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 40px;
+  font-size: 28px;
+  width: 500px;
+}
+
 .hero {
+  align-items: center;
+  justify-content: center;
+  height: 95vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
+}
+
+#hi {
+  height: 80vh;
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
-  justify-content: space-between;
-  scroll-snap-align: start;
 }
 
 #hero-1 {
-  height: 100vh;
-  width: 100vw;
-  background: linear-gradient(180deg, #F1F8F9 0%, #F4F7F7 50.28%);
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
+  /*background: linear-gradient(180deg, #F1F8F9 0%, #F4F7F7 50.28%);*/
+  background: #eff8f9;
+  display: flex;
+}
+
+.image {
+  height: 60%;
+  width: 100%;
+    object-fit: contain;
+    display:flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.helper {
+    min-height: 45%;
+}
+
+.helper2 {
+    min-height: 10%;
+}
+
+
+.intro {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.intro-1 {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #swipe-mock-up {
-  height: 65%;
+  height: 100%; object-fit: contain;
 }
 
-.title {
-  position: absolute;
-  margin-top: 71vh;
+a:any-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.title, .title:visited {
   font-size: 32pt;
   font-family: halyard-display, sans-serif;
   font-weight: 500;
   font-style: normal;
   text-decoration: none;
   line-height: 1.2em;
+  text-align: center;
+  padding-bottom: 20px;
 }
 
 #one {
@@ -98,16 +152,12 @@ img {
 }
 
 .des {
-  position: absolute;
-  margin-top: 85vh;
   font-size: 14px;
   line-height: 1.4em;
 }
 
 #des-1 {
-
   color: #044450;
-
 }
 
 #des-2 {
@@ -115,16 +165,15 @@ img {
 }
 
 #hero-2 {
-  height: 100vh;
+  height: 95vh;
   width: 100vw;
-  background: linear-gradient(180deg, #F6EFF0 0%, #FFFDFD 51.93%);
+/*   background: linear-gradient(180deg, #F6EFF0 0%, #FFFDFD 51.93%); */
   margin: 0 0 0 0;
   padding: 0 0 0 0;
-   scroll-snap-align: start;
 }
 
 #hatsukoi {
-  height: 80%;
+  height: 70%; object-fit: contain;
 }
 
 #two {
@@ -136,17 +185,15 @@ img {
 }
 
 #hero-3 {
-  height: 100vh;
+  height: 95vh;
   width: 100vw;
-  background: linear-gradient(180deg, #EFF3F6 0%, #FDFEFF 51.93%);
+/*   background: linear-gradient(180deg, #EFF3F6 0%, #FDFEFF 51.93%); */
   margin: 0 0 0 0;
   padding: 0 0 0 0;
-   scroll-snap-align: start;
 }
 
 #olympics {
-  margin-top: 12.5vh;
-  height: 65%;
+  height: 70%; object-fit: contain;margin-bottom: 0;
 }
 
 #three {
@@ -159,18 +206,19 @@ img {
 
 
 #hero-4 {
-  height: 100vh;
+  height: 95vh;
   width: 100vw;
-  background: linear-gradient(180deg, #F0F7F6 0%, #F8FCFB 55.25%);
+/*   background: linear-gradient(180deg, #F0F7F6 0%, #F8FCFB 55.25%); */
   margin: 0 0 0 0;
   padding: 0 0 0 0;
-   scroll-snap-align: start;
 }
 
+#hero-2 {background:#fdf7f7; margin-top: 5px;}
+  #hero-3 {background:#f8f9fb; margin-top: 5px;}
+  #hero-4 {background:#f3f9f7; margin-top: 5px;}
+
 #homepage {
-  margin-top: 11.7vh;
-  height: 72%;
-  margin-left: -4%;
+  height: 90%; object-fit: contain;
 }
 
 #four {
@@ -185,78 +233,74 @@ img {
 /* for phone only */
 @media (max-width: 599px) {
 
-  .title {
-    font-size: 25px;
-    margin-top: 60vh;
-    -webkit-order: -5;
+  #introduction {
+    width: 320px;
   }
 
-  #swipe-mock-up {
-    height: auto;
-    width: 95%;
+  #hero-1 {
+    height: 85vh;
+    background: #eff8f9;
   }
 
-  #hatsukoi {
-    height: auto;
-    width: 130%;
-    margin-top: 10vh;
-  }
-
-  #homepage {
-    height: auto;
-    width: 200%;
-    margin-top: 10vh;
-  }
-
-  #olympics {
-    height: auto;
-    width: 200%;
-    margin-top: 10vh;
-    margin-left: 10vw;
-  }
-
-  .header {
+  #hero-2, #hero-3, #hero-4 {
+    height: 50vh;
+    justify-content: center;
     align-items: center;
-    height: 5vh;
-    -webkit-order: 10;
-    margin-top: 77vh;
-    padding-left: 10vw;
   }
 
-  .hero {
-    height: 100vh;
-    -webkit-order:-1;
+  #hero-2 {background:#fdf7f7; margin-top: 5px;}
+  #hero-3 {background:#f8f9fb; margin-top: 5px;}
+  #hero-4 {background:#f3f9f7; margin-top: 5px;}
+
+  .helper, .helper2, .helperb, .helper2b {
+    display: none;
   }
 
-  .logo {
-    font-size: 16px;
-    font-weight: 600;
+  .title, .title:visited {
+    font-size: 25px;
+    padding-bottom: 10px;
   }
 
-.item, a.item:link, a.item:visited, a.item-icon:link, a.item-icon:visited {
-  margin: 0px 20px 0px 0px;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 400;
-  color: black;
-}
-
-.item-icon:link, .item-icon:visited {
-  margin-right: 20px;
-}
-
-  #email {
-  display:none;
+  .intro {
+    height: auto;
   }
 
-  .main {
-    margin-top: 0vh;
+  .intro-1 {
+    height: auto;
   }
 
   .des {
-    margin-top: 70vh;
+    display: none;
   }
 
+  #one {
+    margin-top: 20px;
+  }
+
+  #olympics {
+    padding: 0px 20px 0px 20px;
+  }
+
+  #homepage {
+    padding: 0px 20px 0px 20px;
+  }
+}
+
+@media (max-width: 400px)
+
+{
+  .logo {
+    font-size: 14px;
+  }
+
+  .item, .item:link, .item:visited, .item-icon:link, .item-icon:visited {
+    font-size: 14px;
+    margin: 0px 20px 0px 0px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
 }
 
 /* for-tablet-portrait-up */
