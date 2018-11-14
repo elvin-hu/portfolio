@@ -644,6 +644,8 @@ a:any-link {
     padding-left: 5vw;
     text-align: left;
     align-items: flex-start;
+    font-size: 13pt;
+    max-width: 87%;
   }
 
   .screenshot-intro-text {
