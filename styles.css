@@ -436,6 +436,12 @@ a:any-link {
   max-width: 600px;
   height: auto;
   padding-top: 20px;
+          -webkit-touch-callout: text; /* iOS Safari */
+    -webkit-user-select: text !important; /* Safari */
+     -khtml-user-select: text; /* Konqueror HTML */
+       -moz-user-select: text; /* Firefox */
+        -ms-user-select: text; /* Internet Explorer/Edge */
+            user-select: text; /* Non-prefixed version, currently */
 
 }
 
@@ -487,7 +493,7 @@ a:any-link {
   justify-content: flex-end;
   }
 
-  #introduction {
+  .introduction {
     width: auto;
     padding-left: 5%;
     font-size: 25px;
@@ -548,9 +554,17 @@ a:any-link {
     font-size: 25px;
     text-align: left;
     padding-right: 40px;
+
   }
 
-    #introduction {
+  .introduction-mobile {
+    -webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+  }
+
+    .introduction {
     display:none;
   }
 
@@ -638,6 +652,12 @@ a:any-link {
 
   .detail-paragraph {
     font-size: 13pt;
+        -webkit-touch-callout: text; /* iOS Safari */
+    -webkit-user-select: text !important; /* Safari */
+     -khtml-user-select: text; /* Konqueror HTML */
+       -moz-user-select: text; /* Firefox */
+        -ms-user-select: text; /* Internet Explorer/Edge */
+            user-select: text; /* Non-prefixed version, currently
   }
 
   .develop {
