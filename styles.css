@@ -524,6 +524,47 @@ a:any-link {
   border-radius: 5px;
 }
 
+#project-3-main {
+  background: #f8f9fb;
+}
+
+#project-3-title {
+  color: #28729C;
+}
+
+.azure {
+  color: #49a0dc;
+}
+
+.dark-three {
+  background: #F6F8F9;
+}
+
+#project-4-main {
+  background: #f3f9f7;
+}
+
+#project-4-title {
+  color: #1B606E;
+}
+
+.dark-four {
+  background: #F5F9F8;
+}
+
+.mint {
+  color: #19c998;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /* for phone only */
@@ -757,7 +798,7 @@ a:any-link {
     font-size: 20px;
   }
 
-
+  
 
 
 }
