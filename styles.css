@@ -51,6 +51,7 @@ p {
   justify-content: space-between;
   padding-top: 5%;
   padding-left: 5%;
+  padding-bottom: 1%;
   padding-right: 5%;
   align-items: center;
   z-index:9999;
@@ -422,7 +423,7 @@ a:any-link {
   line-height: 1.5em;
   letter-spacing: 0.03em;
   padding-bottom: 20px;
-  text-align: center;
+  text-align: left;
   max-width: 500px;
 }
 
@@ -442,7 +443,6 @@ a:any-link {
        -moz-user-select: text; /* Firefox */
         -ms-user-select: text; /* Internet Explorer/Edge */
             user-select: text; /* Non-prefixed version, currently */
-
 }
 
 .vertical-center {
@@ -467,21 +467,62 @@ a:any-link {
   text-align: center;
 }
 
+#project-2-main {
+  background:#fdf7f7;
+}
 
+#project-2-title {
+  color: #891626;
+}
 
+.accent-2 {
+  color: #ec3968;
+}
 
+.left-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 
+.right {
+  margin-left: 30px;
+  width: 40%;
+}
 
+.photo-small {
+  height: 400px;
+  width: 533px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
 
+.dark-two {
+  background: #FBF8F8;
+}
 
+#pioneer {
+  width: 500px;
+  height: 210px;
+}
 
+.dark-red {
+  color: #891626;
+}
 
+#steps {
+  height: 641px;
+  width: 907px;
+  border-radius: 5px;
+}
 
-
-
-
-
-
+#final-hatsukoi {
+  width: 800px;
+  height: 546px;
+  border-radius: 5px;
+}
 
 
 
