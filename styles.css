@@ -865,6 +865,12 @@ object-fit: contain;
     max-height: 100%;
     height: auto;
   }
+
+  .no-max-height {
+    max-height: none;
+  }
+
+
 }
 
 
