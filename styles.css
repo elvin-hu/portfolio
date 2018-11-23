@@ -153,6 +153,15 @@ p {
 a:any-link {
   text-decoration: none;
   color: inherit;
+      -webkit-transition:  .2s ease-in-out;
+    -moz-transition:  .2s ease-in-out;
+    -o-transition:  .2s ease-in-out;
+    -ms-transition:  .2s ease-in-out;
+    transition:  .2s ease-in-out;
+}
+
+a:hover {
+  opacity: 0.5;
 }
 
 .title, .title:visited {
@@ -164,6 +173,15 @@ a:any-link {
   line-height: 1.2em;
   text-align: center;
   padding-bottom: 20px;
+    -webkit-transition:  .2s ease-in-out;
+    -moz-transition:  .2s ease-in-out;
+    -o-transition:  .2s ease-in-out;
+    -ms-transition:  .2s ease-in-out;
+    transition:  .2s ease-in-out;
+}
+
+.title:hover {
+  opacity: 0.5;
 }
 
 #one {
@@ -869,7 +887,6 @@ object-fit: contain;
   .no-max-height {
     max-height: none;
   }
-
 
 }
 
