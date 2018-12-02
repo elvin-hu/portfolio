@@ -120,6 +120,25 @@ p {
   flex-direction: column;
   justify-content: center;
   position: relative;
+
+}
+
+.intro-image {
+    -webkit-transition:  .2s ease-in-out;
+    -moz-transition:  .2s ease-in-out;
+    -o-transition:  .2s ease-in-out;
+    -ms-transition:  .2s ease-in-out;
+    transition:  .2s ease-in-out;
+}
+
+.intro-image:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  -webkit-transition:  .2s ease-in-out;
+    -moz-transition:  .2s ease-in-out;
+    -o-transition:  .2s ease-in-out;
+    -ms-transition:  .2s ease-in-out;
+    transition:  .2s ease-in-out;
 }
 
 .helper {
@@ -158,6 +177,7 @@ a:any-link {
     -o-transition:  .2s ease-in-out;
     -ms-transition:  .2s ease-in-out;
     transition:  .2s ease-in-out;
+
 }
 
 a:hover {
