@@ -106,10 +106,16 @@ p {
   align-items: center;
 }
 
-#hero-1 {
+#hero-voice {
   /*background: linear-gradient(180deg, #F1F8F9 0%, #F4F7F7 50.28%);*/
   background: #eff8f9;
   display: flex;
+}
+
+#hero-news {
+  /*background: linear-gradient(180deg, #F1F8F9 0%, #F4F7F7 50.28%);*/
+  background: #F8FBFE;
+  margin-top: 5px;
 }
 
 .image {
@@ -157,7 +163,7 @@ p {
   align-items: center;
   justify-content: flex-start;
 }
-.intro-1 {
+.intro-voice {
   height: 40vh;
   display: flex;
   flex-direction: column;
@@ -166,6 +172,10 @@ p {
 }
 
 #swipe-mock-up {
+  height: 100%; object-fit: contain;
+}
+
+#news-homepage {
   height: 100%; object-fit: contain;
 }
 
@@ -211,17 +221,26 @@ a:hover {
 .des {
   font-size: 14px;
   line-height: 1.4em;
+  text-align: center;
 }
 
-#des-1 {
+#des-voice {
   color: #044450;
 }
 
-#des-2 {
+#des-news {
   color: #044450;
 }
 
-#hero-2 {
+#title-news {
+  color: #266FA0;
+}
+
+#des-pioneer {
+  color: #044450;
+}
+
+#hero-pioneer {
   height: 95vh;
   width: 100vw;
 /*   background: linear-gradient(180deg, #F6EFF0 0%, #FFFDFD 51.93%); */
@@ -237,11 +256,11 @@ a:hover {
   color:#891626;
 }
 
-#des-2 {
+#des-pioneer {
   color: #1B0202;
 }
 
-#hero-3 {
+#hero-olympics {
   height: 95vh;
   width: 100vw;
 /*   background: linear-gradient(180deg, #EFF3F6 0%, #FDFEFF 51.93%); */
@@ -257,12 +276,12 @@ a:hover {
   color: #28729C;
 }
 
-#des-3 {
+#des-olympics {
   color: #02101B;
 }
 
 
-#hero-4 {
+#hero-homepage {
   height: 95vh;
   width: 100vw;
 /*   background: linear-gradient(180deg, #F0F7F6 0%, #F8FCFB 55.25%); */
@@ -270,9 +289,9 @@ a:hover {
   padding: 0 0 0 0;
 }
 
-#hero-2 {background:#fdf7f7; margin-top: 5px;}
-  #hero-3 {background:#f8f9fb; margin-top: 5px;}
-  #hero-4 {background:#f3f9f7; margin-top: 5px;}
+#hero-pioneer {background:#fdf7f7; margin-top: 5px;}
+  #hero-olympics {background:#f8f9fb; margin-top: 5px;}
+  #hero-homepage {background:#f3f9f7; margin-top: 5px;}
 
 #homepage {
   height: 90%; object-fit: contain;
@@ -282,7 +301,7 @@ a:hover {
   color: #1B606E;
 }
 
-#des-4 {
+#des-homepage {
   color: #021114;
 }
 
@@ -328,13 +347,19 @@ a:hover {
   background: #eff8f9;
 }
 
-.header-one {
-  background: #eff8f9;
+#project-5-main {
+  background: #F8FBFE;
 }
 
 #project-1-title {
   color: #146B66;
 }
+
+#project-5-title {
+  color: #266FA0;
+}
+
+
 
 .project-description {
   display: flex;
@@ -378,6 +403,10 @@ a:hover {
   background: #F4F8F8;
 }
 
+.dark-five {
+  background: #f1f4f7;
+}
+
 .detail-title {
   font-size: 28pt;
   font-family: halyard-display, sans-serif;
@@ -402,6 +431,10 @@ a:hover {
   color: #B1CFD5;
   letter-spacing: 0.03em;
   font-weight: 400;
+}
+
+.instruction-news {
+  color: #a2bbd5;
 }
 
 .problem, .solution {
@@ -451,6 +484,17 @@ a:hover {
   padding-left: 20px;
 }
 
+.no-right-padding {
+  padding-right: 0px;
+}
+
+.xs-max {
+  height: 542px;
+  width: 267px;
+}
+
+
+
 .screenshot-intro {
   align-items: center;
   display: flex;
@@ -463,6 +507,10 @@ a:hover {
   font-weight: 500;
   line-height: 1.5em;
   color: #044450;
+}
+
+.detail-title-news {
+  color: #266FA0;
 }
 
 .screenshot-intro-text {
@@ -527,6 +575,10 @@ a:hover {
 
 .accent-2 {
   color: #ec3968;
+}
+
+.accent-5 {
+  color: #3a86dc;
 }
 
 .left-right {
@@ -666,20 +718,25 @@ a:hover {
     font-size: 25px;
   }
 
-  #hero-1 {
+  #hero-voice {
     height: 85vh;
     background: #eff8f9;
   }
 
-  #hero-2, #hero-3, #hero-4 {
+  #hero-news {
+    height: 85vh;
+    background: #F8FBFE;
+  }
+
+  #hero-pioneer, #hero-olympics, #hero-homepage {
     height: 50vh;
     justify-content: center;
     align-items: center;
   }
 
-  #hero-2 {background:#fdf7f7; margin-top: 5px;}
-  #hero-3 {background:#f8f9fb; margin-top: 5px;}
-  #hero-4 {background:#f3f9f7; margin-top: 5px;}
+  #hero-pioneer {background:#fdf7f7; margin-top: 5px;}
+  #hero-olympics {background:#f8f9fb; margin-top: 5px;}
+  #hero-homepage {background:#f3f9f7; margin-top: 5px;}
 
   .helper, .helper2, .helperb, .helper2b {
     display: none;
@@ -694,7 +751,7 @@ a:hover {
     height: auto;
   }
 
-  .intro-1 {
+  .intro-voice {
     height: auto;
   }
 
