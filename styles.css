@@ -943,7 +943,6 @@ object-fit: contain;
 
   .right {
     display: block;
-    max-width: 87vw;
     width: auto;
     margin-left: 30px;
   }
