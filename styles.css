@@ -942,10 +942,6 @@ object-fit: contain;
   }
 
   .right {
-    display: none;
-  }
-
-  .right-mobile {
     display: block;
     max-width: 87vw;
     width: auto;
