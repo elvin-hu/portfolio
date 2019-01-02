@@ -55,7 +55,7 @@ p {
   padding-right: 5%;
   align-items: center;
   z-index:9999;
-  	-webkit-transition: all ease-out .4s;
+    -webkit-transition: all ease-out .4s;
   -moz-transition: all ease-out .4s;
   -o-transition: all ease-out .4s;
   transition: all ease-out .4s;
@@ -236,6 +236,10 @@ a:hover {
   color: #266FA0;
 }
 
+#title-senators {
+  color: #305982;
+}
+
 #des-pioneer {
   color: #044450;
 }
@@ -268,6 +272,14 @@ a:hover {
   padding: 0 0 0 0;
 }
 
+#hero-senators {
+  height: 95vh;
+  width: 100vw;
+/*   background: linear-gradient(180deg, #EFF3F6 0%, #FDFEFF 51.93%); */
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
 #olympics {
   height: 70%; object-fit: contain;margin-bottom: 0;
 }
@@ -291,9 +303,14 @@ a:hover {
 
 #hero-pioneer {background:#fdf7f7; margin-top: 5px;}
   #hero-olympics {background:#f8f9fb; margin-top: 5px;}
+  #hero-senators {background:#F7F9FB; margin-top: 5px;}
   #hero-homepage {background:#f3f9f7; margin-top: 5px;}
 
 #homepage {
+  height: 90%; object-fit: contain;
+}
+
+#senators {
   height: 90%; object-fit: contain;
 }
 
@@ -302,6 +319,10 @@ a:hover {
 }
 
 #des-homepage {
+  color: #021114;
+}
+
+#des-senators {
   color: #021114;
 }
 
@@ -722,7 +743,7 @@ a:hover {
     height: 85vh;
     background: #eff8f9;
   }
-
+  
   #hero-news {
     height: 85vh;
     background: #F8FBFE;
@@ -942,7 +963,12 @@ object-fit: contain;
   }
 
   .right {
+    display: none;
+  }
+
+  .right-mobile {
     display: block;
+    max-width: 87vw;
     width: auto;
     margin-left: 30px;
   }
@@ -964,8 +990,36 @@ object-fit: contain;
 
 
 
+.button {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  cursor: pointer;
+  transition: opacity 0.5s;
+  border-radius: 40px;
+  color: white;
+  max-width: 250px;
+  text-align: center;
+  margin: 0 auto;
+}
 
+.button:hover {
+  cursor: pointer;
+  background: #D6DDE5;
+  border-radius: 40px;
+  opacity: 0.9;
+}
 
+.button:active {
+  cursor: pointer;
+  border-radius: 40px;
+  opacity: 0.7;
+}
+
+#button-voice {
+  background: #146B66;
+}
 
 
 
