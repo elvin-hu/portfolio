@@ -1,0 +1,21 @@
+Music-integrated workout app
+
+New York, New York
+
+Today, ??? introduces the music-integrated workout app, providing a way for people to use music to hit their target heart rate, boost their exercise results and ensure their health and safety.
+
+“According to studies, we often underestimate or overestimate how vigorously we are actually running. Running too slowly results in less-than-ideal gains, and running too much potentially causes injuries.” Elvin Hu, founder of ??? said, “??? plays music of certain tempos to help people hit their target heart rate goals, monitors their heart rate during running sessions, and slow down or speed up the music when people are running too fast or too slow.”
+
+“In existing workout apps, people don’t have control over their workouts, because they have to follow pre-designed exercises and listen to preloaded playlists, but not everyone has the same taste in music. ??? gives people the freedom to reach their goals in their own rhythms while listening to the music that they like,” [someone else working on the app], said.
+
+With ??? people can:
+
+- Monitor heart rate with their Apple Watch, Fitbit wristband, or compatible gym equipment in real time
+- Make sure they run in the zone of target heart rate based on their goal
+- Use speed/stride as the data source if heart rate sensor is not available
+- Listen to songs in their library during their exercise 
+- Slow down or speed up with the help of the app warping the speed of the songs
+- Start workout on their phone normally, in armband mode or on their watch
+- Store running history in a timeline to track progress
+
+The app will be available on the App Store in early 2019.
