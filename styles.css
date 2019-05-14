@@ -81,7 +81,7 @@ p {
 .introduction {
   text-align: left;
   padding-right: 40px;
-  font-size: 28px;
+  font-size: 40px;
   width: 550px;
   display: block;
 -webkit-margin-before: 1em;
@@ -743,7 +743,7 @@ a:hover {
     height: 85vh;
     background: #eff8f9;
   }
-  
+
   #hero-news {
     height: 85vh;
     background: #F8FBFE;
