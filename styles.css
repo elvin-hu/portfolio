@@ -23,10 +23,6 @@ body {
   overflow-x: none;
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-}
 
 img {
   -webkit-user-select: none;
@@ -59,7 +55,7 @@ p {
   padding-right: 5%;
   align-items: center;
   z-index:9999;
-    -webkit-transition: all ease-out .4s;
+  	-webkit-transition: all ease-out .4s;
   -moz-transition: all ease-out .4s;
   -o-transition: all ease-out .4s;
   transition: all ease-out .4s;
@@ -82,33 +78,37 @@ p {
   margin-right: 20px;
 }
 
+.copy {
+  max-width: 75vw;
+}
+
 .introduction {
   text-align: left;
   padding-right: 40px;
-  font-size: 24px;
-  width: 600px;
+  font-size: 28px;
+  width: 550px;
   display: block;
 -webkit-margin-before: 1em;
 -webkit-margin-after: 1em;
 -webkit-margin-start: 0px;
 -webkit-margin-end: 0px;
-z-index: 1000;
 }
 
 .hero {
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  height: 95vh;
+  min-height: 35vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
+  padding-left: 20vw;
 }
 
 #hi {
   height: 80vh;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-start;
 }
 
 #hero-voice {
@@ -206,7 +206,7 @@ a:hover {
   font-style: normal;
   text-decoration: none;
   line-height: 1.2em;
-  text-align: center;
+  text-align: left;
   padding-bottom: 20px;
     -webkit-transition:  .2s ease-in-out;
     -moz-transition:  .2s ease-in-out;
@@ -226,7 +226,7 @@ a:hover {
 .des {
   font-size: 14px;
   line-height: 1.4em;
-  text-align: center;
+  text-align: left;
 }
 
 #des-voice {
@@ -241,20 +241,16 @@ a:hover {
   color: #266FA0;
 }
 
+#title-redact {
+  color: #444444;
+}
+
 #title-senators {
   color: #305982;
 }
 
 #des-pioneer {
   color: #044450;
-}
-
-#hero-pioneer {
-  height: 95vh;
-  width: 100vw;
-/*   background: linear-gradient(180deg, #F6EFF0 0%, #FFFDFD 51.93%); */
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
 }
 
 #hatsukoi {
@@ -269,21 +265,7 @@ a:hover {
   color: #1B0202;
 }
 
-#hero-olympics {
-  height: 95vh;
-  width: 100vw;
-/*   background: linear-gradient(180deg, #EFF3F6 0%, #FDFEFF 51.93%); */
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
-}
 
-#hero-senators {
-  height: 95vh;
-  width: 100vw;
-/*   background: linear-gradient(180deg, #EFF3F6 0%, #FDFEFF 51.93%); */
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
-}
 
 #olympics {
   height: 70%; object-fit: contain;margin-bottom: 0;
@@ -298,18 +280,13 @@ a:hover {
 }
 
 
-#hero-homepage {
-  height: 95vh;
-  width: 100vw;
-/*   background: linear-gradient(180deg, #F0F7F6 0%, #F8FCFB 55.25%); */
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
-}
-
+#hero-voice {margin-top: 5px;}
+#hero-redact {background:#FaFaFa; margin-top: 5px;}
 #hero-pioneer {background:#fdf7f7; margin-top: 5px;}
   #hero-olympics {background:#f8f9fb; margin-top: 5px;}
   #hero-senators {background:#F7F9FB; margin-top: 5px;}
   #hero-homepage {background:#f3f9f7; margin-top: 5px;}
+  #hero-running {background:#F9F9F9; margin-top: 5px;}
 
 #homepage {
   height: 90%; object-fit: contain;
@@ -734,30 +711,26 @@ a:hover {
 @media (max-width: 599px) {
 
   #hi{
-    align-items: center;
+    align-items: flex-start;
   justify-content: flex-end;
   }
 
   .introduction {
     width: auto;
-    padding-left: 5%;
     font-size: 25px;
   }
 
+  .hero {
+    height: 10vh;
+    padding-left: 5vw;
+  }
+
   #hero-voice {
-    height: 85vh;
     background: #eff8f9;
   }
 
   #hero-news {
-    height: 85vh;
     background: #F8FBFE;
-  }
-
-  #hero-pioneer, #hero-olympics, #hero-homepage {
-    height: 50vh;
-    justify-content: center;
-    align-items: center;
   }
 
   #hero-pioneer {background:#fdf7f7; margin-top: 5px;}
@@ -800,7 +773,7 @@ a:hover {
   #introduction-mobile {
     display: block;
     width: auto;
-    padding-left: 5%;
+    max-width: 80vw;
     font-size: 25px;
     text-align: left;
     padding-right: 40px;
@@ -1013,7 +986,7 @@ object-fit: contain;
   cursor: pointer;
   background: #D6DDE5;
   border-radius: 40px;
-  opacity: 0.9;
+  opacity: 0.99;
 }
 
 .button:active {
