@@ -23,6 +23,10 @@ body {
   overflow-x: none;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+}
 
 img {
   -webkit-user-select: none;
